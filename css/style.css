@@ -13,15 +13,8 @@ section:not([id]) {
   border-top: 1px solid #333;
 }
 
-section h3 {
-  margin-bottom: 0;
-}
-
-section p {
-  margin-top: 0;
-}
-
-section code {
+code {
+  margin: 1rem;
   background-color: #EEE;
   padding: 0.5em 0.75em;
 }
@@ -32,27 +25,166 @@ section code {
 */
 
 /* Styling for the navigation button */
+
 .button-nav {
+  margin: 1rem;
   display: inline-block;
   padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #333;
-  border-radius: 0.25em;
+  color: black;
+  border-radius: 0.625em;
+  border: 1px solid white;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #999;
+  border: 1px solid black;
 }
+
+/*[START] IN-TEXT LINK [START]*/
+.intropara{
+  width: 70%;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intropara p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+/*[END] IN-TEXT LINK [END]*/
+
+/*[START] BUTTON[START]*/
+.subtn{
+  background: none;
+  border: 1.5px solid black;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px;
+}
+.subtn:hover{
+  background: black;
+  color: white;
+  transition: 0.8s;
+}
+.resbtn{
+  border: 1.5px solid white;
+  background: black;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px;
+  color: white;
+}
+.resbtn:hover{
+  background: white;
+  color: black;
+  transition: 0.8s;
+  border: 1.5px solid black;
+}
+/*[END] BUTTON [END]*/
+
+/*[START] INPUT TEXT [START]
+https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.html*/
+.wrapper{
+
+  max-width: 30rem;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.wrapper .input-data{
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .input-data input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: silver;
+}
+.wrapper .input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.input-data .underline{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 2px solid silver;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before{
+  transform: scaleX(1);
+  border-bottom: 2px solid white;
+}
+/*[END] INPUT TEXT [END]
+https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.html*/
 
 
 
 /*
   TEXT ELEMENTS -------------------
 */
+/*[START] HEADINGS [START]*/
+.headings{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.headings h1{
+  font-size: 3rem;
+}
+.headings h2{
+  font-size: 2.5rem;
+}
+.headings h3{
+  font-size: 2rem;
+}
+.headings h4{
+  font-size: 1.5rem;
+}
+/*[END] HEADINGS [END]*/
 
+/*[START] PARAGRAPHS [START]*/
+.paragraph{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+.paragraph p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+/*[END] PARAGRAPHS[END]*/
 
 
 
@@ -73,7 +205,7 @@ section code {
 .navbar nav{
   height: 5rem;
   width: 100%;
-  background: black;
+  background: grey;
 }
 
 .navbar label{
@@ -97,7 +229,7 @@ section code {
 
 .navbar a{
   text-decoration: none;
-  color: white;
+  color: red;
   font-size: 18px;
   padding: 7px 10px;
   border-radius: 10px;
@@ -107,3 +239,51 @@ section code {
   border: 1px solid white;
   transition: .5s;
 }
+#icon{
+  color: red;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  cursor: pointer;
+  padding: 0 30px;
+}
+
+@media (max-width: 1048px){
+  .navbar label{
+    font-size: 20px;
+    padding-left: 4rem;
+  }
+
+  .navbar ul{
+    margin-top: 1.25rem;
+  }
+
+  .navbar a{
+    font-size: 17px;
+  }
+
+  @media (max-width: 909px){
+    #icon{
+      background: yellow;
+    }
+    .navbar ul{
+      position: absolute;
+      width: 75%;
+      height: 50vh;
+      margin-top: 0;
+      background: green;
+      text-align: center;
+    }
+    .navbar li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .navbar a{
+      font-size: 20px;
+    }
+    a.active, a:hover{
+      border: none;
+    }
+  }
+/* [END] NAVBAR [END]*/

@@ -5,6 +5,9 @@
     <title>Style Guide Template</title>
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
 
   <body>
@@ -42,20 +45,53 @@
         <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="button" href="#">Default Button</a>
+        <div class="btn-nav">
+            <a class="button-nav" href="#">Home</a>
+        </div>
 
       </section>
 
       <section>
         <h2>In-text link</h2>
+        <div class="intropara">
+          <p>As a visual artist, film enthusiast and undergraduate student at <a href="https://sfu.ca">Simon Fraser University</a>, I was initially here to study Graphic Design but I find myself more comfortable crafting projects in the Media concentration of SFU's Interactive Arts and Technology program. With sketching and drawing being embedded in my DNA and being obsessed with portraits, I am captivated by the complexity of the human body, specifically the face and its emotions, which pushes me to be as detail-orientated as possible in my work. I nurture a growing interest in Film and 3D Animation where my sketching skills can be conveniently used.</p>
+        </div>
+
       </section>
 
       <section>
         <h2>Submit/Reset Buttons</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.btn</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;button type="button" class="button" name="button"&gt;Name&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <button class="btn subtn" type="button" name="submit">submit</button>
+        <button class="btn resbtn" type="button" name="submit">reset</button>
       </section>
 
       <section>
         <h2>Text Input Field</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.wrapper</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;input type="text" required&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+        <div class="wrapper">
+          <div class="input-data">
+            <input type="text" required>
+            <div class="underline">
+            </div>
+            <label>Name</label>
+          </div>
+        </div>
       </section>
 
     </section>
@@ -68,10 +104,19 @@
 
       <section>
         <h2>Headings</h2>
+        <div class="headings">
+          <h1>This is my H1</h1>
+          <h2>This is my H2</h2>
+          <h3>This is my H3</h3>
+          <h4>This is my H4</h4>
+        </div>
       </section>
 
       <section>
         <h2>Paragraphs</h2>
+        <div class="paragraph">
+          <p>Hi, i'm Dean - A visual artist, film enthusiast and undergraduate student.</p>
+        </div>
       </section>
 
       <section>
@@ -101,6 +146,9 @@
               <li><a href="#">My Work</a></li>
               <li><a href="#">Resume</a></li>
             </ul>
+            <label id="icon">
+              <i class="fas fa-bars"></i>
+            </label>
           </nav>
 
         </div>

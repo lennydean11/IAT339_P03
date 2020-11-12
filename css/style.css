@@ -183,6 +183,7 @@ https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.ht
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 
 }
 .headings h1{
@@ -415,4 +416,55 @@ https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.ht
 .navcontainer {
     width: 100%;
     margin: 0 auto;
+}
+
+.artefact{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.artefact img{
+  max-width: 30rem;
+  margin: 1rem;
+}
+
+.apara{
+  flex-grow: 1;
+  flex-basis: 15em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 8rem 5rem;
+  float: right;
+}
+.apara{
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 75em){
+  .artefact{
+    justify-content: center;
+  }
+  img{
+    padding-top: 3rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 60em){
+  .apara{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 40em){
+  .apara{
+    font-size: 1rem;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
 }

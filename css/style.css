@@ -209,7 +209,7 @@ https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.ht
   margin-right: auto;
   text-align: center;
   line-height: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .paragraph p{
   font-family: 'Open Sans', sans-serif;
@@ -223,7 +223,7 @@ https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.ht
   COMBINED ELEMENTS -------------------
 */
 
-/* [START] NAVBAR [START]*/
+/* [START] NAVBAR [START]
 
 .navbar{
   padding: 0;
@@ -317,7 +317,8 @@ https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.ht
     right: 0;
     top: 0;
     height: 5rem;
-    background: black;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
 .navbar2 .logo {
@@ -326,14 +327,11 @@ https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.ht
   font-family: 'Open Sans', sans-serif;
   float: left;
   font-size: 2rem;
-  color: white;
+  color: black;
   display: flex;
 }
 
 @media (max-width: 20rem) {
-  #icon{
-    display: none;
-  }
     .navbar2 .logo {
         font-size: 1rem;
     }
@@ -358,14 +356,18 @@ https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.ht
     text-decoration: none;
     display: block;
     font-size: 1rem;
-    color: white;
+    color: black;
+    padding: 0.5rem 0;
+}
+#icon{
+  color: white;
 }
 
 
 @media screen and (max-width: 43rem) {
   #icon{
     transform: translateY(-73%);
-    color: white;
+    color: black;
     font-size: 30px;
     line-height: 80px;
     float: right;
@@ -402,8 +404,8 @@ https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.ht
     }
 }
 
-.navbar2 a:hover {
-    border-top: 1px solid white;
+.navbar2 a:hover{
+  border-bottom: 0.0625rem solid black;
 }
 
 .navbar2 a:hover::before {

@@ -31,6 +31,9 @@ img{
   img{
     width: 100%;
   }
+  .slider .images{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 60em){
@@ -45,10 +48,15 @@ img{
   img{
     width: 100%;
   }
+
+  .slider .images{
+    width: 100%;
+  }
 }
 
 .work2{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 5rem;
   background: #fff;
@@ -59,16 +67,19 @@ img{
 /* SLIDER https://www.youtube.com/watch?v=3MoRr5sudO0*/
 
 .slider {
+  background: red;
+  display: flex;
+  justify-content: center;
   margin: 2rem;
-    width: 60%;
-    overflow: hidden;
+  width: 60%;
+  overflow: scroll;
+  transform: translate(25%, -10%);
 }
 .images {
     display: flex;
     width: 100%;
 }
 .images img {
-    height: 400px;
     width: 100%;
     transition: all 0.15s ease;
 }
@@ -80,6 +91,7 @@ img{
     justify-content: center;
     margin: 5px;
 }
+
 .dots label {
   margin: 2rem;
     height: 10px;
@@ -91,7 +103,10 @@ img{
     margin: 5px;
 }
 
-.dots label:hover {background: black;}
+.dots label:hover {
+  background: black;
+}
+
 #img1:checked ~ .m1 {
     margin-left: 0;
 }
@@ -106,3 +121,4 @@ img{
 }
 #img5:checked ~ .m5 {
     margin-left: -400%;
+}

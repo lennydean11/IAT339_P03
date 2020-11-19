@@ -1,6 +1,7 @@
 body{
   background: white;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar2{
@@ -16,34 +17,46 @@ body{
   margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-img{
-  height: 30rem;
-  max-width: 30rem;
+.intro h2{
+  padding: 1rem;
+  text-align: center;
 }
+
+img{
+  width: 30%;
+  float: right;
+}
+
 
 .para{
   flex-grow: 1;
   flex-basis: 15em;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
+  padding: 0.5rem 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.para2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
   padding: 1rem 5rem;
-  float: right;
 }
-.para .para2{
-  font-size: 1.2rem;
-}
+
+
 @media screen and (max-width: 75em){
   .intro{
     justify-content: center;
   }
   img{
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 }
@@ -52,13 +65,19 @@ img{
   .para{
     font-size: 1.2rem;
   }
+  .para2{
+    font-size: 0.9rem;
+  }
 }
 @media screen and (max-width: 40em){
   .para{
     font-size: 1rem;
   }
   img{
-    width: 100%;
+    width: 50%;
     height: auto;
+  }
+  .para2{
+    font-size: 0.8rem;
   }
 }
